@@ -1,0 +1,17 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+      <a class="navbar-brand" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink='/home'>{{pageTitle}}</a>
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active">
+          <a routerLink='/home'>Home</a>
+        </li>
+        <li routerLinkActive="active">
+          <a routerLink='/heroForm'>Form</a>
+        </li>
+        <li routerLinkActive="active">
+          <a routerLink='/validationForm'>Form Validation</a>
+        </li>
+      </ul>
+      
+  </div>
+</nav>
