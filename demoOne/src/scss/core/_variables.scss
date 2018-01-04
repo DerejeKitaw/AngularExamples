@@ -2,13 +2,5 @@
 // Core Admin Variables
 $border-color:                        $gray-200 !default;
 
-// Navbar
-$navbar-height:                       55px !default;
-$navbar-bg:                           #fff !default;
-$navbar-border: (
-  bottom: (
-    size:                             1px,
-    style:                            solid,
-    color:                            $border-color
-  )
-)  !default;
+@import "variables-navbar";
+@import "variables-navbar-brand";

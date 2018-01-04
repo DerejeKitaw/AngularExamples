@@ -1,0 +1,19 @@
+//#region Navbar -brand variables
+$navbar-brand-width:                  155px !default;
+$navbar-brand-bg:                     lightgrey !default;
+$navbar-brand-logo:                   url('/assets/img/logo.png') !default;
+$navbar-brand-logo-size:              40px auto !default;
+$navbar-brand-border: (
+  bottom: (
+    size:                             1px,
+    style:                            solid,
+    color:                            $border-color
+  )
+) !default;
+
+$navbar-brand-minimized-width:        50px !default;
+$navbar-brand-minimized-bg:           $navbar-brand-bg !default;
+$navbar-brand-minimized-logo:         url('/assets/img/logo-symbol.png') !default;
+$navbar-brand-minimized-logo-size:    24px !default;
+$navbar-brand-minimized-border:       $navbar-brand-border !default;
+//#endregion

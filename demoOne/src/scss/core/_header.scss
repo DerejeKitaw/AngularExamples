@@ -2,11 +2,24 @@
     flex: 0 0 $navbar-height;
 }
 .app-header.navbar {
-    position: relative;
+    //position: relative;
     flex-direction: row;
     height: $navbar-height;
     padding: 0;
     margin: 0;
     background-color: $navbar-bg;
     @include borders($navbar-border);
+    @import "brand-navbar";
+}
+
+.header-fixed {
+    .app-header {
+      position: fixed;
+      z-index: $zindex-sticky;
+      width: 100%;
+    }
+    // when fixed position need top margion for the header 
+    .app-body {
+        margin-top: $navbar-height;
+      }
 }
