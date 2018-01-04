@@ -2,5 +2,8 @@
 // Core Admin Variables
 $border-color:                        $gray-200 !default;
 
+@import "variables-core";
 @import "variables-navbar";
+@import "variables-sidebar";
+@import "variables-aside-menu";
 @import "variables-navbar-brand";

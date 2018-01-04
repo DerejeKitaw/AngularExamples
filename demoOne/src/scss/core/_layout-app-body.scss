@@ -1,0 +1,20 @@
+// app-body will display contents in columns
+.app-body {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    overflow-x: hidden;
+    .main {
+        flex: 1;
+        min-width: 0;
+    }
+    .sidebar {
+        // $sidebar-width is the width of the columns
+        flex: 0 0 $sidebar-width; // put the nav on the left
+        order: -1;
+    }
+    .aside-menu {
+        // $aside-menu-width is the width of the columns
+        flex: 0 0 $aside-menu-width;
+    }
+}
