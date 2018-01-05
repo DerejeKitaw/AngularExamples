@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { AppHeaderComponent } from './app-header/app-header.component';
 import { AppSidebarComponent } from './app-sidebar/app-sidebar.component';
 import { AppSidebarNavComponent } from './app-sidebar-nav/app-sidebar-nav.component';
+import { AppSidebarNavItemComponent } from './app-sidebar-nav-item/app-sidebar-nav-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppHeaderComponent,
     AppSidebarComponent,
-    AppSidebarNavComponent
+    AppSidebarNavComponent,
+    AppSidebarNavItemComponent
   ],
   imports: [
     BrowserModule,
