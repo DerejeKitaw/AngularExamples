@@ -9,6 +9,7 @@ import { AppHeaderComponent } from './app-header/app-header.component';
 import { AppSidebarComponent } from './app-sidebar/app-sidebar.component';
 import { AppSidebarNavComponent } from './app-sidebar-nav/app-sidebar-nav.component';
 import { AppSidebarNavItemComponent } from './app-sidebar-nav-item/app-sidebar-nav-item.component';
+import { AppSidebarNavLinkComponent } from './app-sidebar-nav-link/app-sidebar-nav-link.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AppSidebarNavItemComponent } from './app-sidebar-nav-item/app-sidebar-n
     AppHeaderComponent,
     AppSidebarComponent,
     AppSidebarNavComponent,
-    AppSidebarNavItemComponent
+    AppSidebarNavItemComponent,
+    AppSidebarNavLinkComponent
   ],
   imports: [
     BrowserModule,
