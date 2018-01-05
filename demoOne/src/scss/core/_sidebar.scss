@@ -1,5 +1,6 @@
 // scss-lint:disable NestingDepth, SelectorDepth
 .sidebar {
+    overflow: hidden; //crop content 
     display: flex;
     flex-direction: column;
     padding: $sidebar-padding;

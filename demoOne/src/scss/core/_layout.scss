@@ -17,3 +17,5 @@
     flex: 0 0 $navbar-height;
   }
   @import "layout-app-body";
+  // Fix the side bar width
+  @import "idebar-fixed";

@@ -1,0 +1,23 @@
+.sidebar-fixed {
+  .sidebar {
+    position: fixed;
+    z-index: $zindex-sticky - 1;
+    width: $sidebar-width;
+    height: calc(100vh - #{$navbar-height});
+    // margin-top: - $navbar-height;
+
+    // .sidebar-nav {
+    //   height: calc(100vh - #{$navbar-height});
+    // }
+  }
+
+  .main, .app-footer {
+    margin-left: $sidebar-width;
+  }
+
+  &.sidebar-hidden {
+    .main, .app-footer {
+      margin-left: 0;
+    }
+  }
+}
