@@ -3,11 +3,14 @@
 </p>
 <nav class="sidebar-nav">
 <ul class="nav">
-  <li>test1</li>
-  <app-sidebar-nav-item>test1</app-sidebar-nav-item>
-  <app-sidebar-nav-item>test1</app-sidebar-nav-item>
-  <app-sidebar-nav-item>test1</app-sidebar-nav-item>
-  <app-sidebar-nav-item>test1</app-sidebar-nav-item>
-  
+    <ng-template ngFor let-navitem [ngForOf]="navigation">
+        <li *ngIf="isDivider(navitem)" class="nav-divider"></li>
+        <ng-template [ngIf]="isTitle(navitem)">
+          <app-sidebar-nav-title [title]='navitem'></app-sidebar-nav-title>
+        </ng-template>
+        <ng-template [ngIf]="!isDivider(navitem)&&!isTitle(navitem)">
+          <app-sidebar-nav-item [item]='navitem'></app-sidebar-nav-item>
+        </ng-template>
+      </ng-template>
 </ul>
 </nav>

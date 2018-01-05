@@ -11,6 +11,7 @@ import { AppSidebarNavComponent } from './app-sidebar-nav/app-sidebar-nav.compon
 import { AppSidebarNavItemComponent } from './app-sidebar-nav-item/app-sidebar-nav-item.component';
 import { AppSidebarNavLinkComponent } from './app-sidebar-nav-link/app-sidebar-nav-link.component';
 import { AppSidebarNavDropdownComponent } from './app-sidebar-nav-dropdown/app-sidebar-nav-dropdown.component';
+import { AppSidebarNavTitleComponent } from './app-sidebar-nav-title/app-sidebar-nav-title.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AppSidebarNavDropdownComponent } from './app-sidebar-nav-dropdown/app-s
     AppSidebarNavComponent,
     AppSidebarNavItemComponent,
     AppSidebarNavLinkComponent,
-    AppSidebarNavDropdownComponent
+    AppSidebarNavDropdownComponent,
+    AppSidebarNavTitleComponent
   ],
   imports: [
     BrowserModule,
