@@ -10,19 +10,19 @@ export class AppSidebarNavLinkComponent implements OnInit {
   @Input() link: any;
 
   public hasVariant() {
-    return this.link.variant ? true : false
+    return this.link.variant ? true : false;
   }
 
   public isBadge() {
-    return this.link.badge ? true : false
+    return this.link.badge ? true : false;
   }
 
   public isExternalLink() {
-    return this.link.url.substring(0, 4) === 'http' ? true : false
+    return this.link.url.substring(0, 4) === 'http' ? true : false;
   }
 
   public isIcon() {
-    return this.link.icon ? true : false
+    return this.link.icon ? true : false;
   }
 
   constructor() { }

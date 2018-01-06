@@ -1,16 +1,22 @@
-<p>
-  app-sidebar-nav works!
-</p>
 <nav class="sidebar-nav">
-<ul class="nav">
+  <ul class="nav">
     <ng-template ngFor let-navitem [ngForOf]="navigation">
-        <li *ngIf="isDivider(navitem)" class="nav-divider"></li>
-        <ng-template [ngIf]="isTitle(navitem)">
-          <app-sidebar-nav-title [title]='navitem'></app-sidebar-nav-title>
-        </ng-template>
-        <ng-template [ngIf]="!isDivider(navitem)&&!isTitle(navitem)">
-          <app-sidebar-nav-item [item]='navitem'></app-sidebar-nav-item>
-        </ng-template>
+
+      <!-- Insert divider if divider: true -->
+      <li *ngIf="isDivider(navitem)" class="nav-divider"></li>
+
+      <!-- Insert title block if title: true - is not clickable-->
+      <ng-template [ngIf]="isTitle(navitem)">
+        <app-sidebar-nav-title [title]='navitem'></app-sidebar-nav-title>
       </ng-template>
-</ul>
+      
+      
+      <!-- Insert navigation item if it is not title  or devider -->
+      <!-- Dropdown and item will be separated in app-sidebar-nav-item component -->
+      <ng-template [ngIf]="!isDivider(navitem)&&!isTitle(navitem)">
+        <app-sidebar-nav-item [item]='navitem'></app-sidebar-nav-item>
+      </ng-template>
+
+    </ng-template>
+  </ul>
 </nav>

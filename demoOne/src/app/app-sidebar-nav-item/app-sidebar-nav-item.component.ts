@@ -10,15 +10,15 @@ export class AppSidebarNavItemComponent implements OnInit {
   @Input() item: any;
 
   public hasClass() {
-    return this.item.class ? true : false
+    return this.item.class ? true : false;
   }
 
   public isDropdown() {
-    return this.item.children ? true : false
+    return this.item.children ? true : false;
   }
 
   public thisUrl() {
-    return this.item.url
+    return this.item.url;
   }
 
   public isActive() {

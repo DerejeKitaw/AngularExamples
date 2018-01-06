@@ -10,11 +10,11 @@ export class AppSidebarNavDropdownComponent implements OnInit {
   @Input() link: any;
 
   public isBadge() {
-    return this.link.badge ? true : false
+    return this.link.badge ? true : false;
   }
 
   public isIcon() {
-    return this.link.icon ? true : false
+    return this.link.icon ? true : false;
   }
 
   constructor() { }
