@@ -12,6 +12,8 @@ import { AppSidebarNavItemComponent } from './app-sidebar-nav-item/app-sidebar-n
 import { AppSidebarNavLinkComponent } from './app-sidebar-nav-link/app-sidebar-nav-link.component';
 import { AppSidebarNavDropdownComponent } from './app-sidebar-nav-dropdown/app-sidebar-nav-dropdown.component';
 import { AppSidebarNavTitleComponent } from './app-sidebar-nav-title/app-sidebar-nav-title.component';
+import { NavDropdownDirective } from './nav-dropdown-directive/nav-dropdown.directive';
+import { NavDropdownToggleDirective } from './nav-dropdown-directive/nav-dropdown-toggle.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { AppSidebarNavTitleComponent } from './app-sidebar-nav-title/app-sidebar
     AppSidebarNavItemComponent,
     AppSidebarNavLinkComponent,
     AppSidebarNavDropdownComponent,
-    AppSidebarNavTitleComponent
+    AppSidebarNavTitleComponent,
+    NavDropdownDirective,
+    NavDropdownToggleDirective
   ],
   imports: [
     BrowserModule,

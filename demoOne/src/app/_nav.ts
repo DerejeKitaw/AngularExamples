@@ -129,15 +129,15 @@ export const navigation = [
       ]
     },
     {
-      name: 'Download CoreUI',
-      url: 'http://coreui.io/angular/',
+      name: 'Voltage Drop',
+      url: 'http://dkitaw.com',
       icon: 'icon-cloud-download',
       class: 'mt-auto',
       variant: 'success'
     },
     {
-      name: 'Try CoreUI PRO',
-      url: 'http://coreui.io/pro/angular/',
+      name: 'PV Design',
+      url: 'http://dkitaw.com',
       icon: 'icon-layers',
       variant: 'danger'
     }
