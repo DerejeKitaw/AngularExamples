@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { AppObservableChangeDetectionComponent } from './components/app-observable-change-detection/app-observable-change-detection.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AppObservableChangeDetectionComponent
   ],
   imports: [
     BrowserModule,
