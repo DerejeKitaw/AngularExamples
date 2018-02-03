@@ -25,7 +25,11 @@
     "core-js": "^2.4.1",
     "json-server": "^0.12.1",
     "rxjs": "^5.5.6",
-    "zone.js": "^0.8.19"
+    "zone.js": "^0.8.19",
+    "@ngrx/effects": "4.1.0",
+    "@ngrx/router-store": "4.1.1",
+    "@ngrx/store": "4.1.0",
+    "@ngrx/store-devtools": "4.0.0"
   },
   "devDependencies": {
     "@angular/cli": "1.6.7",
