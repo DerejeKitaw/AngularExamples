@@ -27,4 +27,4 @@ export class LoadAllCountiesError implements Action {
   constructor(public payload: Error) {}
 }
 
-export type PizzasAction = LoadAllCounties | LoadAllCountiesSuccess | LoadAllCountiesError;
+export type CountyAction = LoadAllCounties | LoadAllCountiesSuccess | LoadAllCountiesError;
