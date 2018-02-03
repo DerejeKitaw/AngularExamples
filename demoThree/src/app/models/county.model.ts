@@ -1,14 +1,14 @@
 export interface County {
-  _id: string;
+  _id?: string;
   id?: number;
-  WindSpeed: string;
+  windSpeed: number;
   groundSnowLoad?: number;
   FireLaneRequirement?: number;
   RoofMountIncludesWellAndSeptic?: boolean;
   RoofMountIncludesSitePlan?: boolean;
   FootingPlan?: boolean;
   RapidShutdown?: boolean;
-  Stampeddrawing: string;
+  Stampeddrawing?: string;
   Certletter?: number;
   NEC?: number;
   IBC?: number;

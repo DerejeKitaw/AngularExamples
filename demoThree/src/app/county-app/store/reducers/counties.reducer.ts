@@ -3,7 +3,6 @@ import { County } from '../../../models/county.model';
 
 export interface CountyState {
   data: County[];
-  selected: County;
   action: string;
   done: boolean;
   error?: Error;
@@ -12,7 +11,7 @@ export interface CountyState {
 export const initialState: CountyState = {
   data: [
     {
-      WindSpeed: 'none',
+      windSpeed: 90,
       groundSnowLoad: 25,
       FireLaneRequirement: 2017,
       RoofMountIncludesWellAndSeptic: false,
@@ -21,17 +20,15 @@ export const initialState: CountyState = {
       RapidShutdown: true,
       Stampeddrawing: 'none',
       Certletter: 2017,
-      NEC: 'none',
+      NEC: 2014,
       IBC: 2015,
       IRC: 2015,
       countyName: 'Somerset',
       age: 24,
-      isActive: true,
-      id: 0,
-      _id: '598cb9fab70858bd038c85fe'
+      isActive: true
     },
     {
-      WindSpeed: 115,
+      windSpeed: 115,
       groundSnowLoad: 30,
       FireLaneRequirement: 2017,
       RoofMountIncludesWellAndSeptic: false,
@@ -39,18 +36,15 @@ export const initialState: CountyState = {
       FootingPlan: true,
       RapidShutdown: false,
       Stampeddrawing: 'WET',
-      Certletter: 'none',
+      Certletter: 2017,
       NEC: 2014,
       IBC: 2015,
       IRC: 2015,
       countyName: 'Frederick',
       age: 34,
-      isActive: true,
-      id: 1,
-      _id: '598cb9fa7dd1f768cd140228'
+      isActive: true
     }
   ],
-  selected: null,
   action: null,
   done: false,
   error: null

@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { StoreModule } from '@ngrx/store';
+import { CountyAppModule } from './county-app/county-app.module';
 
 
 @NgModule({
@@ -12,7 +14,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CountyAppModule,
+    StoreModule.forRoot({}, {}),
   ],
   providers: [],
   bootstrap: [AppComponent]
