@@ -10,7 +10,46 @@ export interface CountyState {
 }
 
 export const initialState: CountyState = {
-  data: [],
+  data: [
+    {
+      WindSpeed: 'none',
+      groundSnowLoad: 25,
+      FireLaneRequirement: 2017,
+      RoofMountIncludesWellAndSeptic: false,
+      RoofMountIncludesSitePlan: true,
+      FootingPlan: false,
+      RapidShutdown: true,
+      Stampeddrawing: 'none',
+      Certletter: 2017,
+      NEC: 'none',
+      IBC: 2015,
+      IRC: 2015,
+      countyName: 'Somerset',
+      age: 24,
+      isActive: true,
+      id: 0,
+      _id: '598cb9fab70858bd038c85fe'
+    },
+    {
+      WindSpeed: 115,
+      groundSnowLoad: 30,
+      FireLaneRequirement: 2017,
+      RoofMountIncludesWellAndSeptic: false,
+      RoofMountIncludesSitePlan: true,
+      FootingPlan: true,
+      RapidShutdown: false,
+      Stampeddrawing: 'WET',
+      Certletter: 'none',
+      NEC: 2014,
+      IBC: 2015,
+      IRC: 2015,
+      countyName: 'Frederick',
+      age: 34,
+      isActive: true,
+      id: 1,
+      _id: '598cb9fa7dd1f768cd140228'
+    }
+  ],
   selected: null,
   action: null,
   done: false,
