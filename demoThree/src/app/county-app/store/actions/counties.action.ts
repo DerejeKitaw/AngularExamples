@@ -9,7 +9,7 @@ export const LOAD_COUNTIES_SUCCESS = '[ALL] Counties Success';
 export const LOAD_COUNTIES_ERROR = '[ALL] Counties Error';
 
 /****************************************
- * LOAD all the counties
+ * LOAD all the counties action creators
  ****************************************/
 export class LoadAllCounties implements Action {
   readonly type = LOAD_COUNTIES;
