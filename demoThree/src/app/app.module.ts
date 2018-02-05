@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store';
 import { CountyAppModule } from './county-app/county-app.module';
 
+import { reducers  } from './store';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { CountyAppModule } from './county-app/county-app.module';
     BrowserModule,
     AppRoutingModule,
     CountyAppModule,
-    StoreModule.forRoot({}, {}),
+    StoreModule.forFeature('counties', reducers),
   ],
   providers: [],
   bootstrap: [AppComponent]
