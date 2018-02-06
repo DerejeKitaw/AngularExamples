@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {Store} from '@ngrx/store';
+import {Router} from '@angular/router';
+import * as fromStore from '../store';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-counties',
@@ -11,9 +15,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CountiesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router,
+    private store: Store<fromStore.CountiesState>) { }
 
   ngOnInit() {
+    console.log('... Initializing counties component');
+    this.store.select('Counties').subscribe(state => {  console.log(state); });
+    this.store.dispatch(new fromStore.LoadAllCounties());
   }
 
 }
