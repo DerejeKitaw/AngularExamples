@@ -8,6 +8,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { TopContainerComponent } from './top-container/top-container.component';
 import { BoxesSectionComponent } from './boxes-section/boxes-section.component';
 import { InfoSectionComponent } from './info-section/info-section.component';
+import { PortfolioSectionComponent } from './portfolio-section/portfolio-section.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { InfoSectionComponent } from './info-section/info-section.component';
     NavigationComponent,
     TopContainerComponent,
     BoxesSectionComponent,
-    InfoSectionComponent
+    InfoSectionComponent,
+    PortfolioSectionComponent
   ],
   imports: [
     BrowserModule,
