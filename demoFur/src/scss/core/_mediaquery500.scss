@@ -1,0 +1,24 @@
+ /* Media Queries */
+ @media(max-width: 500px) {
+    .top-container {
+        grid-template-areas: 'showcase' 'top-box-a' 'top-box-b';
+        .showcase {
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    }
+    .main-nav {
+        ul {
+            grid-template-columns: 1fr;
+        }
+    }
+    .info {
+        grid-template-columns: 1fr;
+        .btn {
+            display: block; // fill all the column width
+            text-align: center;
+            margin: autho;
+        }
+    }
+}
