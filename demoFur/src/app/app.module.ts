@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { TopContainerComponent } from './top-container/top-container.component';
 import { BoxesSectionComponent } from './boxes-section/boxes-section.component';
+import { InfoSectionComponent } from './info-section/info-section.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { BoxesSectionComponent } from './boxes-section/boxes-section.component';
     AppComponent,
     NavigationComponent,
     TopContainerComponent,
-    BoxesSectionComponent
+    BoxesSectionComponent,
+    InfoSectionComponent
   ],
   imports: [
     BrowserModule,
