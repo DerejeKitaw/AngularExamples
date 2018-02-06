@@ -9,6 +9,7 @@ import { TopContainerComponent } from './top-container/top-container.component';
 import { BoxesSectionComponent } from './boxes-section/boxes-section.component';
 import { InfoSectionComponent } from './info-section/info-section.component';
 import { PortfolioSectionComponent } from './portfolio-section/portfolio-section.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { PortfolioSectionComponent } from './portfolio-section/portfolio-section
     TopContainerComponent,
     BoxesSectionComponent,
     InfoSectionComponent,
-    PortfolioSectionComponent
+    PortfolioSectionComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
