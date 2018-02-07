@@ -3,9 +3,16 @@
     .top-container {
         grid-template-areas: 'showcase showcase' 'top-box-a top-box-b';
         .showcase {
+            grid-area: showcase;
             h1 {
                 font-size: 2.5rem;
             }
+        }
+        .top-box-a {
+            grid-area: top-box-a;
+        }
+        .top-box-b {
+            grid-area: top-box-b;
         }
     }
     .main-nav {
