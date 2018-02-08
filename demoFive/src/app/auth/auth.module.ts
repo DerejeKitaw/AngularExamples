@@ -25,6 +25,7 @@ import {MatInputModule, MatCardModule, MatButtonModule} from '@angular/material'
     LoginComponent,
     RegisterComponent,
     RecoverComponent
-  ]
+  ],
+  providers: [AuthService],
 })
 export class AuthModule { }
