@@ -30,3 +30,7 @@ ng g c auth/login -d
 ```
 yarn add firebase
 ```
+
+### turn on firebase Email/Password autentication
+
+
