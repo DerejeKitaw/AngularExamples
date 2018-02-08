@@ -8,3 +8,10 @@ or
 
 yarn add @angular/material @angular/animations
 ```
+
+### [add material toolbar](https://material.angular.io/components/toolbar/overview)
+```
+<mat-toolbar>
+  <span>My Application</span>
+</mat-toolbar>
+```
