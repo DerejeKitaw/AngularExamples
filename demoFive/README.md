@@ -25,3 +25,8 @@ ng g m Auth
 ```
 ng g c auth/login -d
 ```
+
+### install firebase
+```
+yarn add firebase
+```
