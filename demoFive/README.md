@@ -16,6 +16,11 @@ yarn add @angular/material @angular/animations
 </mat-toolbar>
 ```
 
+### add auth modules
+```
+ng g m Auth
+```
+
 ### add auth components
 ```
 ng g c auth/login -d
