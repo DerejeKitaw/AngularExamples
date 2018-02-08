@@ -6,7 +6,7 @@ export class AuthService {
   constructor() { }
 
   login(user) {
-    return firebase.auth().signInWithEmailAndPassword(user.email, user.password);
+    return firebase.auth().signInWithEmailAndPassword(user.email, user.password).then(result => console.log(result));
   }
   register(user) {
     return firebase.auth().createUserWithEmailAndPassword(user.email, user.password);

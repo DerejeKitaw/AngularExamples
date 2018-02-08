@@ -7,6 +7,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { AuthRoutingModule } from './auth-routing.module';
 import {MatInputModule, MatCardModule, MatButtonModule} from '@angular/material';
 import { AuthService } from './auth.service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { AuthService } from './auth.service';
     AuthRoutingModule,
     MatInputModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    ReactiveFormsModule
   ],
   declarations: [
     LoginComponent,

@@ -2,24 +2,23 @@
   <span>Login</span>
 </mat-toolbar>
 <mat-card>
-<form >
-  <table >
-    <tr>
-      <td>
-        <mat-form-field>
-          <input matInput placeholder="Email">
-        </mat-form-field>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <mat-form-field>
-          <input matInput placeholder="Password" type="password">
-        </mat-form-field>
-      </td>
-    </tr>
-    <button mat-raised-button color="primary">Login</button>
-  </table>
-</form>
+  <form [formGroup]="loginForm" (ngSubmit)="auth.login(loginForm.value)">
+    <table>
+      <tr>
+        <td>
+          <mat-form-field>
+            <input formControlName="email" matInput placeholder="Email">
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <mat-form-field>
+            <input formControlName="password" matInput placeholder="Password" type="password">
+          </mat-form-field>
+        </td>
+      </tr>
+      <button mat-raised-button color="primary" type="submit">Login</button>
+    </table>
+  </form>
 </mat-card>
-

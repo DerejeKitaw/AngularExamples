@@ -2,30 +2,30 @@
   <span>Register</span>
 </mat-toolbar>
 <mat-card>
-<form >
+<form  [formGroup]="registerForm" (ngSubmit)="auth.register(registerForm.value)">
   <table >
     <tr>
       <td>
         <mat-form-field>
-          <input matInput placeholder="First Name">
+          <input formControlName="name" matInput placeholder="First Name">
         </mat-form-field>
       </td>
     </tr>
     <tr>
       <td>
         <mat-form-field>
-          <input matInput placeholder="Email">
+          <input formControlName="email" matInput placeholder="Email">
         </mat-form-field>
       </td>
     </tr>
     <tr>
       <td>
         <mat-form-field>
-          <input matInput placeholder="Password" type="password">
+          <input formControlName="Password"  matInput placeholder="Password" type="password">
         </mat-form-field>
       </td>
     </tr>
-    <button mat-raised-button color="primary">Register</button>
+    <button mat-raised-button color="primary" type="submit">Register</button>
   </table>
 </form>
 </mat-card>
