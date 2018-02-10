@@ -1,4 +1,4 @@
-# DemoFive
+# DemoFive - To demonstrate how firebase works with angular
 
 ###  [Install Angular Material and Angular CDK](https://material.angular.io/guide/getting-started)
 ```
