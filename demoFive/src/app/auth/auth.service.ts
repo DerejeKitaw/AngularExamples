@@ -13,7 +13,7 @@ export class AuthService {
     .createUserWithEmailAndPassword(user.email, user.password)
     .then(newUser => {
       firebase.database()
-      .ref('/acounts')
+      .ref('/accounts')
       .child(newUser.uid)
       .set({
         name: user.name,

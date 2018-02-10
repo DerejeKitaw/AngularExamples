@@ -5,9 +5,10 @@ import { RegisterComponent } from './register/register.component';
 import { RecoverComponent } from './recover/recover.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { AuthRoutingModule } from './auth-routing.module';
-import {MatInputModule, MatCardModule, MatButtonModule} from '@angular/material';
+import {MatInputModule, MatCardModule, MatButtonModule, MatListModule} from '@angular/material';
 import { AuthService } from './auth.service';
 import { ReactiveFormsModule } from '@angular/forms';
+import { UsersListComponent } from './users-list/users-list.component';
 
 @NgModule({
   imports: [
@@ -17,12 +18,14 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatInputModule,
     MatCardModule,
     MatButtonModule,
+    MatListModule,
     ReactiveFormsModule
   ],
   declarations: [
     LoginComponent,
     RegisterComponent,
-    RecoverComponent
+    RecoverComponent,
+    UsersListComponent
   ],
   exports: [
     LoginComponent,
