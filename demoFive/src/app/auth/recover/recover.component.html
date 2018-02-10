@@ -1,3 +1,18 @@
-<p>
-  recover works!
-</p>
+<mat-toolbar color="primary">
+  <span>Recover</span>
+</mat-toolbar>
+<mat-card>
+<form  [formGroup]="recoverForm" (ngSubmit)="auth.recover(recoverForm.value)">
+  <table >
+    <tr>
+      <td>
+        <mat-form-field>
+          <input formControlName="email" matInput placeholder="Email">
+        </mat-form-field>
+      </td>
+    </tr>
+    <button mat-raised-button color="primary" type="submit">Recover</button>
+  </table>
+</form>
+</mat-card>
+
