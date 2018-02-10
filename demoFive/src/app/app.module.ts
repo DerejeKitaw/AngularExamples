@@ -13,7 +13,7 @@ const  config = {
   authDomain: 'demofive-90db8.firebaseapp.com',
   databaseURL: 'https://demofive-90db8.firebaseio.com',
   projectId: 'demofive-90db8',
-  storageBucket: '',
+  storageBungcket: '',
   messagingSenderId: '890343590522'
 };
 firebase.initializeApp(config);
