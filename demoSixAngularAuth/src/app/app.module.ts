@@ -6,6 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import * as firebase from 'firebase';
+import { LoginComponent } from './login/login.component';
+import { EmailComponent } from './email/email.component';
+import { MembersComponent } from './members/members.component';
+import { SignupComponent } from './signup/signup.component';
 
 const  config = {
   apiKey: 'AIzaSyAp-UR8f_4IXw5Gg7khW15EsHa_vZ5LjUw',
@@ -19,7 +23,11 @@ firebase.initializeApp(config);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    EmailComponent,
+    MembersComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
