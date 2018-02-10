@@ -9,7 +9,18 @@ export class AuthService {
     return firebase.auth().signInWithEmailAndPassword(user.email, user.password).then(result => console.log(result));
   }
   register(user) {
-    return firebase.auth().createUserWithEmailAndPassword(user.email, user.password);
+    return firebase.auth()
+    .createUserWithEmailAndPassword(user.email, user.password)
+    .then(newUser => {
+      firebase.database()
+      .ref('/acounts')
+      .child(newUser.uid)
+      .set({
+        name: user.name,
+        email: user.email,
+        password: user.password
+      });
+    });
   }
   recover(user) {
     return firebase.auth().sendPasswordResetEmail(user.email);
