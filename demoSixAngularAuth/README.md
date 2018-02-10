@@ -2,6 +2,6 @@
 
 ### install firebase
 ```
-npm install firbase
+npm install angularfire2 firebase --save
 ```
 
