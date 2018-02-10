@@ -33,4 +33,17 @@ yarn add firebase
 
 ### turn on firebase Email/Password autentication
 
+### install  firebaseyarn firebase
+```
+npm install -g firebase-tools
+
+firebase login
+
+firebase init
+      What do you want to use as your public directory? (public) dist
+
+firebase deploy
+```
+
+
 
