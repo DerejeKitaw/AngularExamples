@@ -16,6 +16,7 @@ const  config = {
   storageBungcket: '',
   messagingSenderId: '890343590522'
 };
+
 firebase.initializeApp(config);
 
 @NgModule({
