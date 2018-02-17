@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   error: any;
 
-  constructor(public af: firebase.auth, private router: Router) {
+  constructor() {
     
    }
 

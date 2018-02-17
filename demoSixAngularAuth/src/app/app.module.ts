@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { EmailComponent } from './email/email.component';
 import { MembersComponent } from './members/members.component';
 import { SignupComponent } from './signup/signup.component';
+import { FormsModule } from '@angular/forms';
 // firebase
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
@@ -21,7 +22,7 @@ const  config = {
   storageBucket: '',
   messagingSenderId: '890343590522'
 };
-firebase.initializeApp(config);
+
 
 @NgModule({
   declarations: [
@@ -33,7 +34,10 @@ firebase.initializeApp(config);
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(config),
+    AngularFirestoreModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
