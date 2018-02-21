@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { InverterService } from '../inverter.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-inverter-list',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InverterListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private inverterService: InverterService,
+    private route: ActivatedRoute) {
+    console.log('inverterListCompnent works');
+  }
 
   ngOnInit() {
   }
