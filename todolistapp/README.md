@@ -45,3 +45,7 @@ imports: [
 ``` 
 ng g c todo
 ```
+### Create todo service
+``` 
+ng g s todo
+```
