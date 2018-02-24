@@ -22,7 +22,7 @@ import { TodoService } from './todo.service';
     AngularFireModule.initializeApp(environment.firebase),
     AppRoutingModule
   ],
-  providers: [TodoService],
+  providers: [AngularFireDatabase, TodoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
