@@ -8,3 +8,19 @@
       <button class="btn btn-default" type="button" (click)="onAdd(itemTitle)">Add</button>
     </span>
 </div>
+
+<!-- List to do lists -->
+<div>
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let item of toDoListArray">
+            <span class="hover-cursor" [class.text-success]='item.isChecked'>
+                <i class="fa fa-lg" [ngClass]="item.isChecked?'fa-check-circle-o':'fa-circle-thin'"></i>
+              </span>
+              {{item.title}}
+              <!-- Delete icon -->
+            <span class="hover-cursor text-danger pull-right">
+                <i class="fa fa-trash-o fa-lg"></i>
+              </span>
+        </li>
+      </ul>
+</div>

@@ -51,7 +51,7 @@ ng g s todo
 ```
 
 
-### Install font awsem
+### Install font aweseme
 ```
 npm install font-awesome --save
 ```
