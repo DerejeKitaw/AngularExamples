@@ -1,3 +1,10 @@
-<p>
-  todo works!
-</p>
+<div class="jumbotron">
+  <h4 class="text-center">To Do List App</h4>
+</div>
+
+<div class="input-group">
+  <input type="text" class="form-control" #itemTitle>
+  <span class="input-group-btn">
+      <button class="btn btn-default" type="button" (click)="onAdd(itemTitle)">Add</button>
+    </span>
+</div>
