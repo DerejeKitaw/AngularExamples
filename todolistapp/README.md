@@ -55,3 +55,5 @@ ng g s todo
 ```
 npm install font-awesome --save
 ```
+
+### ![change database permission](src/assets/notes/todo-list-app.png)
