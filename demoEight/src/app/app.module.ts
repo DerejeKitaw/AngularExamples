@@ -7,11 +7,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { InvertersModule } from './inverters/inverters.module';
 
+// firebase import
 import { AngularFireModule } from 'angularfire2';
-import {
-  AngularFireDatabase,
-  AngularFireDatabaseModule
-} from 'angularfire2/database';
+import { AngularFireDatabase } from 'angularfire2/database';
 import { environment } from '../environments/environment';
 
 @NgModule({
@@ -19,11 +17,10 @@ import { environment } from '../environments/environment';
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireDatabaseModule,
     InvertersModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AngularFireDatabase],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

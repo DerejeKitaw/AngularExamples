@@ -6,10 +6,13 @@ export class InverterService {
   inverterLists: AngularFireList<any>;
   // selectedEmployee: Inverter = new Inverter();
 
-  constructor(private _firebase: AngularFireDatabase) {}
+  constructor(private _firebaseDb: AngularFireDatabase) {}
 
-  getData() {
-    this.inverterLists = this._firebase.list('inverters');
+  getAllInverter() {
+    this.inverterLists = this._firebaseDb.list('inverters');
     return this.inverterLists;
   }
+
+  // TODO: Add new inverter
+
 }
