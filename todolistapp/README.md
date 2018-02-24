@@ -49,3 +49,9 @@ ng g c todo
 ``` 
 ng g s todo
 ```
+
+
+### Install font awsem
+```
+npm install font-awesome --save
+```
