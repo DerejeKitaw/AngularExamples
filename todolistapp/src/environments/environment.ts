@@ -6,7 +6,7 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: 'AIzaSyABrj9FVDg6qwWSWSrySku5GhQGtPKnwmYA',
+    apiKey: 'AIzaSyABrj9FVDg6qwWSWSrySku5GhQGtPKnwmY',
     authDomain: 'todolistapp-f1c03.firebaseapp.com',
     databaseURL: 'https://todolistapp-f1c03.firebaseio.com',
     projectId: 'todolistapp-f1c03',
