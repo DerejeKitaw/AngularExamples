@@ -11,7 +11,8 @@ toDoList: AngularFireList<any>;
 
   constructor(private firebasedb: AngularFireDatabase) { }
 
-  // To get todo list from firebase
+  // To get todo list from firebase - as promiss
+  // to get toDoList need to subscribe to it
   getToDoList() {
     this.toDoList = this.firebasedb.list('title');
     return this.toDoList;
