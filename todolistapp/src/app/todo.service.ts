@@ -14,11 +14,13 @@ toDoList: AngularFireList<any>;
   // To get todo list from firebase - as promiss
   // to get toDoList need to subscribe to it
   getToDoList() {
-    this.toDoList = this.firebasedb.list('title');
+    this.toDoList = this.firebasedb.list('title2');
     return this.toDoList;
   }
 
   // To add todo to firebase
+  // "title" - is th name of the list
+  // if "list" doesnt exist firebase will crate it
   addTitle(title: string) {
     this.toDoList.push({
       title: title,
