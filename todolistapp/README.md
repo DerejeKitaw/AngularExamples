@@ -7,3 +7,5 @@
 
 ![change database permission](src/assets/notes/change-firebase-permission.png)
 ![change database permission](src/assets/notes/change-firebase-permission-1.png)
+![change database permission](src/assets/notes/change-firebase-permission-2.png)
+![change database permission](src/assets/notes/change-firebase-permission-3.png)
