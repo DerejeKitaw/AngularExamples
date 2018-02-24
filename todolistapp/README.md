@@ -40,3 +40,8 @@ imports: [
     AngularFireModule.initializeApp(environment.firebase),
   ],
 ```
+
+### Create todo component
+``` 
+ng g c todo
+```
