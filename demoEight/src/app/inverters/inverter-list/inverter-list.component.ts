@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { InverterService } from '../inverter.service';
 import { ActivatedRoute } from '@angular/router';
+import { Inverter } from '../inverter.model';
 
 @Component({
   selector: 'app-inverter-list',
@@ -8,13 +9,23 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./inverter-list.component.scss']
 })
 export class InverterListComponent implements OnInit {
-
-  constructor(private inverterService: InverterService,
+  inverterList: Inverter[];
+  constructor(private _inverterService: InverterService,
     private route: ActivatedRoute) {
     console.log('inverterListCompnent works');
   }
 
   ngOnInit() {
+    const empData = this._inverterService.getData();
+    console.log(empData);
+    empData.snapshotChanges().subscribe(item => {
+      this.inverterList = [];
+      item.forEach(element => {
+        const storageElement = element.payload.toJSON();
+        storageElement['id'] = element.key;
+        this.inverterList.push(storageElement as Inverter);
+      });
+    });
   }
 
 }
