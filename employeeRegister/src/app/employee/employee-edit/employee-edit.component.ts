@@ -17,8 +17,9 @@ export class EmployeeEditComponent implements OnInit {
   onSubmit(employeeForm: NgForm) {
   }
   resetForm(employeeForm?: NgForm) {
-    employeeForm.reset();
     if ( employeeForm != null ) {
+      employeeForm.reset();
+    }
       this.employeeService.selectedEmployee = {
         $key: null,
         name: '',
@@ -26,7 +27,5 @@ export class EmployeeEditComponent implements OnInit {
         office: '',
         salary: 0
       };
-
-    }
   }
 }
