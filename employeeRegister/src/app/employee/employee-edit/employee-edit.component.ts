@@ -21,10 +21,17 @@ export class EmployeeEditComponent implements OnInit {
   }
 
   onSubmit(employeeForm: NgForm) {
-    this.employeeService.insertEmployee(employeeForm.value);
-    this.resetForm(employeeForm);
-    console.log('submited');
-    this.toastr.success('Submited Successfully', 'Employee Register');
+    if (employeeForm.value.$key == null) {
+      this.employeeService.insertEmployee(employeeForm.value);
+      this.toastr.success('Inserted Successfully', 'Employee Register');
+
+    } else {
+      this.employeeService.updateEmployee(employeeForm.value);
+      this.resetForm(employeeForm);
+      console.log('submited');
+      this.toastr.success('Updated Successfully', 'Employee Register');
+
+    }
   }
 
   resetForm(employeeForm?: NgForm) {
@@ -33,11 +40,12 @@ export class EmployeeEditComponent implements OnInit {
       employeeForm.reset();
       this.employeeService.selectedEmployee = {
         $key: null,
-        name: '',
+        name: 'kk',
         position: '',
         office: '',
         salary: 0
       };
     }
+
   }
 }
