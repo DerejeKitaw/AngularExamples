@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
   onActivate(e) {
-    console.log('onActivate' + JSON.stringify(e));
+    console.log('onActivate ' + e.toString());
   }
   onDeactivate(e) {
     console.log('onDeactivate' + JSON.stringify(e));
