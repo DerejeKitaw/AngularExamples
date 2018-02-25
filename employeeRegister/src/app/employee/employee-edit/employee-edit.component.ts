@@ -11,12 +11,15 @@ import {ToastrService} from 'ngx-toastr';
   styleUrls: ['./employee-edit.component.scss']
 })
 export class EmployeeEditComponent implements OnInit {
-
+  get selectedEmployee() {
+    return this.employeeService.selectedEmployee;
+  }
   constructor (private employeeService: EmployeeService , private router: Router, private toastr: ToastrService) {
     // router.navigate([{outlets: {popup: ['list']}}]);
   }
   ngOnInit() {
     this.employeeService.getAllEmployee();
+    // this.selectedEmployee = this.employeeService.selectedEmployee;
     this.resetForm();
   }
 
@@ -38,13 +41,13 @@ export class EmployeeEditComponent implements OnInit {
     if ( employeeForm != null ) {
       console.log('employeeForm is not null');
       employeeForm.reset();
-      this.employeeService.selectedEmployee = {
-        $key: null,
-        name: 'kk',
-        position: '',
-        office: '',
-        salary: 0
-      };
+      // this.selectedEmployee = {
+      //   $key: null,
+      //   name: 'kk',
+      //   position: '',
+      //   office: '',
+      //   salary: 0
+      // };
     }
 
   }
