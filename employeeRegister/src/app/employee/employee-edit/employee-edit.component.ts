@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EmployeeService } from '../shared/employee.service';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-employee-edit',
@@ -9,8 +10,9 @@ import { NgForm } from '@angular/forms';
 })
 export class EmployeeEditComponent implements OnInit {
 
-  constructor(private employeeService: EmployeeService) { }
-
+  constructor (private employeeService: EmployeeService , private router: Router) {
+    router.navigate([{outlets: {popup: ['list']}}]);
+  }
   ngOnInit() {
     this.resetForm();
   }
