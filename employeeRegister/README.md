@@ -14,3 +14,11 @@ style.scss
 @import "node_modules/bootstrap/scss/bootstrap";
 ```
 
+### Install toaster
+```
+npm install ngx-toaster
+imports: [
+    ToastrModule.forRoot()
+  ],
+````
+Add css for toastr

@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { EmployeeService } from '../shared/employee.service';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
+// Third pary
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-employee-edit',
@@ -10,7 +12,7 @@ import { Router } from '@angular/router';
 })
 export class EmployeeEditComponent implements OnInit {
 
-  constructor (private employeeService: EmployeeService , private router: Router) {
+  constructor (private employeeService: EmployeeService , private router: Router, private toastr: ToastrService) {
     // router.navigate([{outlets: {popup: ['list']}}]);
   }
   ngOnInit() {
@@ -22,6 +24,7 @@ export class EmployeeEditComponent implements OnInit {
     this.employeeService.insertEmployee(employeeForm.value);
     this.resetForm(employeeForm);
     console.log('submited');
+    this.toastr.success('Submited Successfully', 'Employee Register');
   }
 
   resetForm(employeeForm?: NgForm) {

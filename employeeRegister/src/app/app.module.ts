@@ -11,11 +11,14 @@ import { AppComponent } from './app.component';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { environment } from '../environments/environment';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EmployeeListComponent } from './employee/employee-list/employee-list.component';
 
 import { EmployeeService } from './employee/shared/employee.service';
 import { EmployeeEditComponent } from './employee/employee-edit/employee-edit.component';
+// Third pary
+import {ToastrModule} from 'ngx-toastr';
+
 //#endregion imports
 @NgModule({
   declarations: [
@@ -27,7 +30,9 @@ import { EmployeeEditComponent } from './employee/employee-edit/employee-edit.co
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ToastrModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [AngularFireDatabase, EmployeeService],
   bootstrap: [AppComponent]
