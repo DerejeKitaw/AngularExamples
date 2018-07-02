@@ -46,4 +46,10 @@ Step 5
 firebase deploy
 ```
 
+```
+ng build --prod --base-href https://derejekitaw.github.io/AngularExamples/employeeRegister/
+```
+```
+ngh
+```
 
