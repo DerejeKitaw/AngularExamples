@@ -1,4 +1,4 @@
-<button class="btn btn-primary" [disabled]="!allowNewServer">Add Server</button>
+<button class="btn btn-primary" [disabled]="!allowNewServer"  >Add Server</button>
 <div *ngIf=allowNewServer>
 
   <input type="text" class="form-control" (input)="onUpdateServerName($event)">

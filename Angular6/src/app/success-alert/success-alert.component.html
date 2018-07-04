@@ -1,0 +1,7 @@
+<button 
+class="btn btn-primary"  
+[disabled]="!adduserName" 
+(click)="resetUserName()"
+>Add</button>
+<input type="text" (input)="getUserName($event)"  [value]="userName" >
+<div>{{userName}}</div>

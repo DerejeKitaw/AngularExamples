@@ -90,6 +90,16 @@ export class ServersComponent implements OnInit {
     ```html
   <input type="text" class="form-control" [(ngModel)]="allowServer">
     ```
+    OR
+    ```html
+    <input type="text" (input)="rturnUserName($event)">
+<p>{{username1}}</p>
+   ```
+   ```ts
+ rturnUserName(event: Event) {
+    this.username1 = (<HTMLInputElement>event.target).value;
+  }
+   ```
 ```ts
 import { Component, OnInit } from '@angular/core';
 
