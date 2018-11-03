@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { ListProjectComponent } from './list-project/list-project.component';
 import { EditProjectComponent } from './edit-project/edit-project.component';
 import { DetailProjectComponent } from './detail-project/detail-project.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    SharedModule
   ],
   declarations: [ListProjectComponent, EditProjectComponent, DetailProjectComponent]
 })

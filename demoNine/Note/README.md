@@ -1,6 +1,8 @@
 ### TODOS
 
 ```
+* When  you create new project use --routing so routing will be included
+
 Create Home component
   ng g c component/Home
 Route all routes to Home - RouterModule.for([{path:'',component:''}])
@@ -43,3 +45,5 @@ ng g s component/project/project
 ng g c component/project/list-project
 ng g c component/project/edit-project
 ng g c component/project/detail-project
+
+```
