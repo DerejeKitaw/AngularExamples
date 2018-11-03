@@ -18,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
       {path: 'home', component: HomeComponent},
       {path: '', redirectTo: 'home', pathMatch: 'full'}, // http://localhost:4200 redirected to http://localhost:4200/home
       {path: '**', redirectTo: 'home', pathMatch: 'full'} // any thing redirected to http://localhost:4200/home
-    ])
+    ]),
+    ProjectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

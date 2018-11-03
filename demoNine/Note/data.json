@@ -1,0 +1,62 @@
+[
+  {
+      "id":1,
+      "siteAssesment":{
+        "mainBreaker" : "100",
+        "jobNumber" : "3785",
+        "spaceAvailable" : "Yes",
+        "mainBreakerType" : ""
+
+      },
+      "Equipments":{
+        "inverters":
+          [{
+            "inverterId":1,
+            "inverterName":"SE7600A-US",
+            "maxDcPower":10250,
+            "maxInputVoltage":500,
+            "maxInputCurrent":500,
+            "maxOutputPower":7600,
+            "OutputVoltage":240,
+            "maxOutputCurrent":7600,
+            "weightedEfficiencyCEC":"97.7"
+        }],
+        "panel":
+        {
+          "panelId":1,
+            "panelName":"SE7600A-US",
+            "power":300,
+            "imp":9.19,
+            "vmp":32.6,
+            "voc":39.8,
+            "isc":9.77,
+            "tempCoefficientVocPerCelsius":0.115,
+            "maxSystemVoltage":1000
+        },
+        "strings":[{
+          "stringId":1,
+          "numberOfModules":12
+        }],
+        "optimizer":[{
+          "optimizerId":1,
+          "optimizerName":"P320",
+          "ratedInputDcPower":320,
+          "maxInputVoltage":48,
+          "maxOutputCurrent":15
+        }]
+      },
+      "wire#1" : "",
+      "wire#2" : "",
+      "wire#3" : "",
+      "wire#4" : "",
+      "wire#5" : "",
+      "wire#6" : "",
+      "wire#7" : "",
+      "wire#8" : "",
+      "customerName" : "Dereje",
+      "address1" : "123 Street ABC",
+      "address2" : "Silver Spring , MD",
+      "date" : "43059",
+      "preparedBy" : "DTK"
+  }
+]
