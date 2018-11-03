@@ -3,9 +3,9 @@
       "id":1,
       "siteAssesment":{
         "mainBreaker" : "100",
-        "jobNumber" : "3785",
-        "spaceAvailable" : "Yes",
-        "mainBreakerType" : ""
+        "spaceAvailable" : true,
+        "mainBreakerType" : "Square D",
+        "generatorExist" : true
 
       },
       "Equipments":{
@@ -15,15 +15,15 @@
             "inverterName":"SE7600A-US",
             "maxDcPower":10250,
             "maxInputVoltage":500,
-            "maxInputCurrent":500,
+            "maxInputCurrent":25,
             "maxOutputPower":7600,
             "OutputVoltage":240,
-            "maxOutputCurrent":7600,
+            "maxOutputCurrent":32,
             "weightedEfficiencyCEC":"97.7"
         }],
         "panel":
         {
-          "panelId":1,
+            "panelId":1,
             "panelName":"SE7600A-US",
             "power":300,
             "imp":9.19,
@@ -57,6 +57,7 @@
       "address1" : "123 Street ABC",
       "address2" : "Silver Spring , MD",
       "date" : "43059",
-      "preparedBy" : "DTK"
+      "preparedBy" : "DTK",
+      "jobNumber" : "3785"
   }
 ]
