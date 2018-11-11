@@ -1,63 +1,67 @@
 [
   {
-      "id":1,
-      "siteAssesment":{
-        "mainBreaker" : "100",
-        "spaceAvailable" : true,
-        "mainBreakerType" : "Square D",
-        "generatorExist" : true
-
-      },
-      "Equipments":{
-        "inverters":
-          [{
-            "inverterId":1,
-            "inverterName":"SE7600A-US",
-            "maxDcPower":10250,
-            "maxInputVoltage":500,
-            "maxInputCurrent":25,
-            "maxOutputPower":7600,
-            "OutputVoltage":240,
-            "maxOutputCurrent":32,
-            "weightedEfficiencyCEC":"97.7"
-        }],
-        "panel":
+    "id": 1,
+    "projectNumber": "3785",
+    "customerFirstName": "Dereje",
+    "customerLastName": "Kitaw",
+    "address1": "123 Street ABC",
+    "address2": "Silver Spring , MD",
+    "date": "43059",
+    "preparedBy": "DTK",
+    "siteAssessment": {
+      "mainBreaker": "100",
+      "spaceAvailable": true,
+      "mainBreakerType": "Square D",
+      "generatorExist": true
+    },
+    "Equipments": {
+      "inverters": [
         {
-            "panelId":1,
-            "panelName":"SE7600A-US",
-            "power":300,
-            "imp":9.19,
-            "vmp":32.6,
-            "voc":39.8,
-            "isc":9.77,
-            "tempCoefficientVocPerCelsius":0.115,
-            "maxSystemVoltage":1000
-        },
-        "strings":[{
-          "stringId":1,
-          "numberOfModules":12
-        }],
-        "optimizer":[{
-          "optimizerId":1,
-          "optimizerName":"P320",
-          "ratedInputDcPower":320,
-          "maxInputVoltage":48,
-          "maxOutputCurrent":15
-        }]
+          "inverterId": 1,
+          "inverterName": "SE7600A-US",
+          "maxDcPower": 10250,
+          "maxInputVoltage": 500,
+          "maxInputCurrent": 25,
+          "maxOutputPower": 7600,
+          "OutputVoltage": 240,
+          "maxOutputCurrent": 32,
+          "weightedEfficiencyCEC": "97.7"
+        }
+      ],
+      "panel": {
+        "panelId": 1,
+        "panelName": "SE7600A-US",
+        "power": 300,
+        "imp": 9.19,
+        "vmp": 32.6,
+        "voc": 39.8,
+        "isc": 9.77,
+        "tempCoefficientVocPerCelsius": 0.115,
+        "maxSystemVoltage": 1000
       },
-      "wire#1" : "",
-      "wire#2" : "",
-      "wire#3" : "",
-      "wire#4" : "",
-      "wire#5" : "",
-      "wire#6" : "",
-      "wire#7" : "",
-      "wire#8" : "",
-      "customerName" : "Dereje",
-      "address1" : "123 Street ABC",
-      "address2" : "Silver Spring , MD",
-      "date" : "43059",
-      "preparedBy" : "DTK",
-      "jobNumber" : "3785"
+      "optimizer": [
+        {
+          "optimizerId": 1,
+          "optimizerName": "P320",
+          "ratedInputDcPower": 320,
+          "maxInputVoltage": 48,
+          "maxOutputCurrent": 15
+        }
+      ]
+    },
+    "strings": [
+      {
+        "stringId": 1,
+        "numberOfModules": 12
+      }
+    ],
+    "wire#1": "wire#1",
+    "wire#2": "wire#2",
+    "wire#3": "wire#3",
+    "wire#4": "wire#4",
+    "wire#5": "wire#5",
+    "wire#6": "wire#6",
+    "wire#7": "wire#7",
+    "wire#8": "wire#8"
   }
 ]
