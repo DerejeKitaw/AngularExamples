@@ -15,4 +15,6 @@ ng g c shopping/shopping-list
 ng g c shopping/shopping-list/shopping-edit
 ng g c shopping/shopping-detail
 
+ng g class shared/ingredientModel
+
 ```
